@@ -1,0 +1,17 @@
+{
+  "name": "Cellared",
+  "displayName": "Cellared",
+  "expo": {
+    "name": "Cellared",
+    "slug": "Cellared",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
