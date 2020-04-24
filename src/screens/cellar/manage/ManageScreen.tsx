@@ -6,13 +6,13 @@ import styles from './styles';
 // navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 // }
 
-const SearchScreen = (): JSX.Element => {
+const ManageScreen = (): JSX.Element => {
   // const { navigation } = this.props;
   return (
     <View style={styles.container}>
-      <Text>This is the HomeScreen -- it is also the search screen.</Text>
+      <Text>This is the Cellar ManageScreen!!!!!!!!</Text>
     </View>
   );
 };
 
-export default SearchScreen;
+export default ManageScreen;
