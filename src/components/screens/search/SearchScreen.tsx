@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Text, View } from 'react-native';
 import styles from './styles';
 
@@ -6,13 +6,13 @@ import styles from './styles';
 // navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 // }
 
-const ManageScreen = (): JSX.Element => {
+const SearchScreen = (): ReactElement => {
   // const { navigation } = this.props;
   return (
     <View style={styles.container}>
-      <Text>This is the Cellar ManageScreen!!!!!!!!</Text>
+      <Text>This is the HomeScreen -- it is also the search screen.</Text>
     </View>
   );
 };
 
-export default ManageScreen;
+export default SearchScreen;

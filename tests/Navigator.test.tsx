@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { shallow, ShallowWrapper } from 'enzyme';
 import React from 'react';
 import 'react-native';
-import Navigator from '../src/navigation/Navigator';
+import Navigator from '../src/components/navigation/DrawerNavigator';
 
 const createTestProps = (props: Object) => ({
   // navigation: {

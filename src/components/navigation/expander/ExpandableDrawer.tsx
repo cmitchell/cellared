@@ -3,7 +3,7 @@ import {
   DrawerContentScrollView,
   DrawerItem,
 } from '@react-navigation/drawer';
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Text, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import styles from './styles';
@@ -32,22 +32,22 @@ export default class ExpandableDrawer extends React.Component<
     });
   };
 
-  render = (): JSX.Element => {
+  render = (): ReactElement => {
     return (
-      <View style={styles.container}>
+      <View style={styles.expandableDrawer}>
         <TouchableOpacity
           activeOpacity={0.8}
           onPress={this.onPress}
-          style={styles.header}
+          style={styles.expandableDrawerContainer}
         >
-          <Text style={styles.topHeading}>{this.props.title}</Text>
+          <Text style={styles.expandableDrawerHeading}>{this.props.title}</Text>
         </TouchableOpacity>
 
         {this.state.isExpanded ? (
           <DrawerContentScrollView>
             <View style={styles.expandedItem}>
               {[...this.props.choices.keys()].map(
-                (label: string): JSX.Element | null => {
+                (label: string): ReactElement | null => {
                   const screen = this.props.choices.get(label);
                   if (screen != undefined) {
                     return (

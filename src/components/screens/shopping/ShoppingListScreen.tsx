@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Text, View } from 'react-native';
 import styles from './styles';
 
@@ -6,13 +6,13 @@ import styles from './styles';
 // navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 // }
 
-const NotificationScreen = (): JSX.Element => {
+const ShoppingListScreen = (): ReactElement => {
   // const { navigation } = this.props;
   return (
     <View style={styles.container}>
-      <Text>This is the NotificationScreen!!!!!!!!</Text>
+      <Text>Yay, this is the ShoppingListSCreen!!!!!!!!</Text>
     </View>
   );
 };
 
-export default NotificationScreen;
+export default ShoppingListScreen;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Text, View } from 'react-native';
 import styles from './styles';
 
@@ -6,7 +6,7 @@ import styles from './styles';
 // navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 // }
 
-const DetailsScreen = (): JSX.Element => {
+const DetailsScreen = (): ReactElement => {
   // const { navigation } = this.props;
   return (
     <View style={styles.container}>

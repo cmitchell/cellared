@@ -1,26 +1,12 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 // import 'react-native-gesture-handler';
 import { Provider as PaperProvider } from 'react-native-paper';
-import Navigator from './navigation/Navigator';
+import Navigator from './components/navigation/DrawerNavigator';
 
-// const App = (): JSX.Element => {
-export default function App(): JSX.Element {
+export default function App(): ReactElement {
   return (
     <PaperProvider>
       <Navigator />
     </PaperProvider>
   );
 }
-
-// AppRegistry.registerComponent('app', () => App);
-
-// export default App;
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
